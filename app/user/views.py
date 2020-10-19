@@ -24,5 +24,4 @@ class ManageUserView(generics.RetrieveUpdateAPIView):
     permission_classes = (permissions.IsAuthenticated,)
 
     def get_object(self):
-        """Retrive and return authentication user"""
         return self.request.user
